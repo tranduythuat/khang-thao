@@ -1,0 +1,288 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.invite {
+    width: 100%;
+
+    .content {
+        aspect-ratio: 494 / 1780;
+        background: url('../../assets/images/invite_bg.png') no-repeat center / 95%;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 0;
+
+        .logo {
+            margin-top: 16%;
+            margin-bottom: 3%;
+
+            img {
+                max-width: 142px;
+            }
+        }
+
+        .parent-info {
+            text-transform: uppercase;
+            font-family: $font-MontserratBold;
+            font-size: 12.5px;
+            line-height: 1.8;
+            margin-top: 4%;
+        }
+
+        .invite-giatien {
+            margin-top: 8%;
+
+            .label {
+                font-family: $font-MontserratBold;
+                font-size: 10.5px;
+                text-transform: uppercase;
+            }
+
+            .time {
+                font-family: $font-lora;
+                font-size: 32px;
+                margin-bottom: 2%;
+            }
+
+            i {
+                font-family: $font-MontserratItalic;
+                font-size: 10.5px;
+                text-transform: uppercase;
+            }
+        }
+
+
+        .invite-text {
+            margin-top: 5%;
+
+            .text {
+                font-family: $font-MontserratBold;
+                font-size: 12.5px;
+                line-height: 2;
+                text-transform: uppercase;
+            }
+
+            .couple-name {
+                font-family: $font-UVNBucThu;
+                font-size: 61px;
+                line-height: 1.1;
+                margin-top: 8%;
+                margin-bottom: 5%;
+
+                .character {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .couple-img {
+            margin-top: 8%;
+
+            img {
+                max-width: 238px;
+            }
+        }
+
+        .time-block {
+            width: 100%;
+            font-family: $font-MontserratBold;
+            margin-top: 10%;
+
+            .label {
+                font-size: 15px;
+                margin-bottom: 4%;
+            }
+
+            .days-of-week {
+                font-size: 20px;
+            }
+
+            .grid {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5%;
+
+                .month,
+                .year {
+                    font-size: 20px;
+                    width: 22%;
+                    text-align: center;
+                    border-bottom: 2px solid $text-color;
+                    border-top: 2px solid $text-color;
+                    padding: 1.6% 0;
+                }
+
+                .date {
+                    font-size: 60px;
+                    @include flex-center;
+                }
+            }
+
+            .lunar-year {
+                font-size: 10.5px;
+                font-family: $font-MontserratItalic;
+                text-transform: uppercase;
+            }
+        }
+
+        .divider {
+            margin: 10%;
+
+            img {
+                max-width: 76px;
+            }
+        }
+
+        .location-block {
+            font-family: $font-MontserratBold;
+
+            .label {
+                text-transform: uppercase;
+                font-size: 12px;
+                margin-bottom: 3%;
+            }
+
+            .name {
+                font-family: $font-UVNBucThu;
+                font-size: 52px;
+                margin-bottom: 3%;
+            }
+
+            .address {
+                font-size: 13.3px;
+                // text-transform: uppercase;
+            }
+        }
+
+        .btn-wrap {
+            margin-top: 6%;
+
+            .map-btn {
+                display: block;
+                text-decoration: none;
+                color: $text-color;
+                font-size: 13.3px;
+                font-family: $font-gothamBold;
+                width: 236px;
+                padding: 1% 0 2%;
+                background-color: transparent;
+                border-radius: 15px;
+                border: 2px solid $text-color;
+                text-transform: uppercase;
+            }
+        }
+
+        &.nha-trai-21-9 {
+            .logo {
+                margin-top: 20%;
+                margin-bottom: 5%;
+            }
+
+            .invite-text {
+                margin-top: 8%;
+
+                .couple-name {
+                    margin-top: 8%;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+
+        @media (max-width: 500px) {
+            .logo {
+                img {
+                    max-width: calc((130 / 500) * 100vw);
+                }
+            }
+
+            .parent-info {
+                font-size: calc((12.5 / 500) * 100vw);
+            }
+
+            .invite-giatien {
+                .label {
+                    font-size: calc((10.5 / 500) * 100vw);
+                }
+
+                .time {
+                    font-size: calc((32 / 500) * 100vw);
+                }
+            }
+
+            .invite-text {
+                .text {
+                    font-size: calc((12.5 / 500) * 100vw);
+                }
+
+                .couple-name {
+                    font-size: calc((61 / 500) * 100vw);
+
+                    .character {
+                        font-size: calc((30 / 500) * 100vw);
+                    }
+                }
+            }
+
+            .couple-img {
+                img {
+                    max-width: calc((238 / 500) * 100vw);
+                }
+            }
+
+            .time-block {
+                .label {
+                    font-size: calc((15 / 500) * 100vw);
+                }
+
+                .days-of-week {
+                    font-size: calc((20 / 500) * 100vw);
+                }
+
+                .grid {
+
+                    .month,
+                    .year {
+                        font-size: calc((20 / 500) * 100vw);
+                    }
+
+                    .date {
+                        font-size: calc((60 / 500) * 100vw);
+                    }
+                }
+
+                .lunar-year {
+                    font-size: calc((10.5 / 500) * 100vw);
+                }
+            }
+
+            .divider {
+                img {
+                    max-width: calc((76 / 500) * 100vw);
+                }
+            }
+
+            .location-block {
+                .name {
+                    font-size: calc((52 / 500) * 100vw);
+                }
+
+                .address {
+                    font-size: calc((13.3 / 500) * 100vw);
+                }
+            }
+
+            .btn-wrap {
+                .map-btn {
+                    font-size: calc((13.3 / 500) * 100vw);
+                    width: calc((236 / 500) * 100vw);
+                    border-radius: calc((15 / 500) * 100vw);
+                    border: calc((2 / 500) * 100vw) solid $text-color;
+                }
+            }
+        }
+    }
+}
