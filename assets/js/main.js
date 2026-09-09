@@ -901,7 +901,7 @@
     // };
 
     // let sheetURL = SHEET_ENDPOINTS[code] || SHEET_ENDPOINTS['nha_gai'];
-    let sheetURL = "/exec?sheet=confirm";
+    let sheetURL = "https://script.google.com/macros/s/AKfycbyTS6F8RVZeB84FKaX2CJ_cT84Oe9szTCxSw75HZ-wZrLTW9_huHNGLJI6hANNZn49adw/exec?sheet=confirm";
 
     try {
       const res = await fetch(sheetURL, {
@@ -961,7 +961,7 @@
 
     if (form) {
       // bindRSVPFieldEvents(form);
-      form.addEventListener("submit", (e) => handleFormSubmit(e, "", "vi"));
+      form.addEventListener("submit", (e) => handleFormSubmit(e, "", "en"));
     }
   }
 
