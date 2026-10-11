@@ -314,11 +314,32 @@ section {
   padding: 10% 0;
   position: relative;
 }
+.rsvp .content .map-link {
+  color: white;
+  background-color: #918e5b;
+  font-family: "Lora", sans-serif;
+  text-decoration: none;
+  line-height: 1;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+  border-radius: 15px;
+  margin: 25% auto;
+  letter-spacing: 1.2px;
+}
+.rsvp .content .map-link:hover {
+  color: rgb(113.6652542373, 111.313559322, 71.3347457627);
+  background-color: rgb(169.0127118644, 166.1779661017, 117.9872881356);
+}
 .rsvp .content .header {
-  padding: 5% 10% 0%;
+  padding: 5% 9% 0%;
 }
 .rsvp .content .header .title {
-  font-size: 51px;
+  font-size: 54px;
   font-weight: 300;
   font-family: "UVNBucThu", sans-serif;
   color: #918e5b;
@@ -326,7 +347,7 @@ section {
 .rsvp .content .header .en-title {
   display: block;
   margin-bottom: 5%;
-  font-size: 18px;
+  font-size: 21px;
   font-family: "Lora", sans-serif;
 }
 .rsvp .content .header .subtext {
@@ -335,7 +356,7 @@ section {
   text-align-last: center;
   font-family: "Lora", sans-serif;
   color: #231f20;
-  font-size: 11px;
+  font-size: 15px;
 }
 .rsvp .content .header .subtext .bold {
   font-family: "SVN-gothamBold", sans-serif;
@@ -346,7 +367,7 @@ section {
   text-align-last: center;
   font-family: "Lora", sans-serif;
   color: #231f20;
-  font-size: 11px;
+  font-size: 15px;
 }
 .rsvp .content .header .en-subtext .bold {
   font-family: "SVN-gothamBold", sans-serif;
@@ -357,7 +378,7 @@ section {
 }
 .rsvp .content .rsvp-form {
   display: block;
-  padding: 0% 10%;
+  padding: 0% 7%;
 }
 .rsvp .content .rsvp-form .button-group {
   display: grid;
@@ -384,8 +405,9 @@ section {
   align-items: center;
   flex-direction: column;
   border: 1px solid #918e5b;
-  aspect-ratio: 192/35;
+  aspect-ratio: 192/40;
   color: #231f20;
+  font-size: 13px;
 }
 .rsvp .content .rsvp-form .button-group .radio-label:hover {
   background: #c1bfa7;
@@ -409,7 +431,7 @@ section {
   padding: 2% 4%;
   border-radius: 8px;
   background: transparent;
-  font-size: 10px;
+  font-size: 15px;
   color: #333;
   outline: none;
   border: 1px solid #918e5b;
@@ -469,7 +491,7 @@ section {
   border: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -493,29 +515,36 @@ section {
   font-size: 9.11px;
 }
 @media (max-width: 500px) {
+  .rsvp .content .map-link {
+    font-size: 3.2vw;
+    max-width: 50vw;
+    border-radius: 3vw;
+    letter-spacing: 0.24vw;
+  }
   .rsvp .content .header .title {
-    font-size: 10.2vw;
+    font-size: 10.8vw;
   }
   .rsvp .content .header .en-title {
-    font-size: 3.6vw;
+    font-size: 4.2vw;
   }
   .rsvp .content .header .subtext {
-    font-size: 1.8vw;
+    font-size: 3vw;
   }
   .rsvp .content .header .en-subtext {
-    font-size: 1.8vw;
+    font-size: 3vw;
   }
   .rsvp .content .header hr {
     border-top: 0.4vw dashed #918e5b;
   }
   .rsvp .content .rsvp-form .button-group .radio-label {
+    font-size: 2.6vw;
     border-radius: 1.6vw;
     border: 0.2vw solid #918e5b;
   }
   .rsvp .content .rsvp-form .form-group input[type=text],
   .rsvp .content .rsvp-form .form-group input[type=number],
   .rsvp .content .rsvp-form .form-group textarea {
-    font-size: 2vw;
+    font-size: 3vw;
     border-radius: 1.6vw;
     border: 0.2vw solid #918e5b;
   }
@@ -523,7 +552,7 @@ section {
     /* keep aspect-ratio unchanged */
   }
   .rsvp .content .rsvp-form .submit-btn {
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     border-radius: 1.6vw;
     letter-spacing: 0.2vw;
   }
